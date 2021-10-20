@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let rol = prompt('¿Quien eres?')
+        let clave
+
+        if (rol == 'Admin') {
+            clave = prompt('Ingresa una contraseña')
+
+            if (clave == 'TheMaster') {
+                console.log('Bienvenido')
+            }else if(clave != 'TheMaster'){
+                console.log('Contraseña incorrecta')
+            }
+        }else if (clave == '' || clave == null) {
+            console.log('Operacion Cancelada')
+        }
+    </script>
+</body>
+</html>

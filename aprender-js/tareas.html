@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //tarea 1
+        //let nombre = prompt('Ingrese su nombre')
+
+
+        // if (nombre == '' || nombre == null) {
+        //     console.log('No ha ingresado su nombre')
+        // }else{
+        //     console.log('El nombre ingresado es ' + nombre)
+        // }
+
+        // let hola = Number('hola')
+        // console.log(typeof hola)
+
+        //operador ternario
+        // let resultado = (nombre != '') ? nombre :
+        //     (nombre == '') ? 'Ingrese su nombre' :
+        // console.log(resultado)
+
+        //tarea 2
+
+        // let respuesta = prompt('Cual es el nombre oficial de Javascript?')
+
+        // if (respuesta == 'ECMAScript') {
+        //     alert('Correcto!!')
+        // }else{
+        //     alert('¿No lo sabes? ¿ECMAScript!')
+        // }
+
+        //tarea 3
+        //la funcion isNaN devuelve true cuando el valor evaluado no es un numero
+
+        // let numero = Number(prompt('Ingrese un numero'))
+
+        // if (numero > 0) {
+        //     console.log('Número mayor que cero')
+        // }else if (numero < 0) {
+        //     console.log('Número es menor que cero')
+        // }else if (numero == 0) {
+        //     console.log('Número igual a cero')
+        // }else if (isNaN(numero)) {
+        //     console.log('Esto no es un número')
+        // }
+
+        //tarea 4
+        // let a = 2, b = 1
+        // let result = (a + b) < 4 ? 'Debajo' : 'Encima'
+        // console.log(result)
+
+        //tarea 5
+        let login = prompt('Ingrese el cargo')
+        let mensaje
+
+            (login == 'Empleado') ? mensaje = 'Hola' :
+            (login == 'Director') ? mensaje = 'Felicidades' :
+            (login == '') ? mensaje = 'Sin session' : mensaje = 'Cargo incorrecto'
+            console.log(mensaje)
+    </script>
+</body>
+</html>
