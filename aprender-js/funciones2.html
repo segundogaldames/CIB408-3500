@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>funciones callback</title>
+</head>
+<body>
+    <script>
+        function respuesta(pregunta, si,no) {
+            if (pregunta) {
+                aceptar()
+            }else{
+                rechazar()
+            }
+        }
+
+        function aceptar() {
+            alert('Felicitaciones')
+        }
+
+        function rechazar() {
+            alert('lo lamentamos')
+        }
+
+        let r = confirm('Estas vacunado?')
+        respuesta(r, aceptar, rechazar)
+
+    </script>
+</body>
+</html>
