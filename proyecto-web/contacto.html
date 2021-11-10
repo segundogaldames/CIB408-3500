@@ -7,6 +7,7 @@
     <title>Pagina de Inicio</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/funciones.js"></script>
 </head>
 <body>
     <header>
@@ -51,10 +52,34 @@
           </nav>
     </header>
     <div class="container-fluid">
-        <h1>Inicio</h1>
-        <p class="text-justify">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid suscipit rem quibusdam facere sed voluptatem hic, fugit in cupiditate eos distinctio fuga quae facilis, magni impedit omnis ad ducimus quod. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, dolores omnis, doloremque ipsam explicabo tempore officia sit dolor qui molestiae reiciendis vel beatae impedit id, enim temporibus dicta pariatur similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic provident laboriosam, ducimus natus repellat ex atque asperiores nobis laborum quo, consequatur aspernatur! Fuga aliquid distinctio quam debitis libero similique sapiente. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur obcaecati dolorum nemo animi fuga quaerat. Enim ipsum, consectetur maiores nulla quaerat autem voluptates ratione. Distinctio assumenda eum id repudiandae a. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem esse corporis dignissimos cupiditate ab at velit laboriosam quis, quaerat dolore sint doloremque nesciunt cumque necessitatibus modi, architecto aspernatur quae reprehenderit.
-        </p>
+        
+        <div class="col-md-6 offset-md-3">
+            <h1>Contacto</h1>
+            <form name="form" action="respuestas.html" method="POST">
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese correo electrónico">
+                </div>
+                <div class="form-group mt-3">
+                  <label for="asunto">Asunto</label>
+                  <select name="asunto" id="asunto" class="form-control">
+                      <option value="">Seleccione</option>
+                      <option value="1">Atención cliente</option>
+                      <option value="2">Problemas con producto</option>
+                      <option value="3">Consultas generales</option>
+                      <option value="4">Otro</option>
+                  </select>
+                </div>
+                <div class="form-group mt-3">
+                    <label for="comentario">Comentarios</label>
+                    <textarea name="comentario" id="comentarios" rows="5" class="form-control" placeholder="Ingrese un comentario"></textarea>
+                </div>
+                <div class="form-group mt-3">
+                    <button type="button" onclick="validaForm();" class="btn btn-outline-primary">Enviar</button>
+                </div>
+                
+              </form>
+        </div>
     </div>
     
    
